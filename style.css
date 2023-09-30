@@ -1,0 +1,183 @@
+:root {
+    --card-height: 12rem;
+    --card-width: 8.4rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans';
+}
+
+.container {
+    background-color: antiquewhite;
+    padding-top: 1px;
+}
+
+.map-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center
+}
+
+#map {
+    display: grid;
+    grid-template-rows: var(--card-height) repeat(9, var(--card-width)) var(--card-height);
+    grid-template-columns: var(--card-height) repeat(9, var(--card-width)) var(--card-height);
+    background-color: #c8e1cb;
+}
+
+#map-center {
+    grid-column-start: 2;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.card {
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 0.7rem;
+    line-height: 0.85rem;
+    height: var(--card-height);
+    position: relative;
+}
+
+.corner-card {
+    width: var(--card-height);
+}
+
+.line-card {
+    width: var(--card-width);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    padding-top: 0.7rem;
+    text-align: center;
+    flex: 4;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.property-card .card-header {
+    border-bottom: 2px solid black;
+    flex: 1.5;
+}
+
+.railroad-card .card-header,
+.utility-card .card-header,
+.chance-card .card-header,
+.community-chest-card .card-header,
+.income-tax-card .card-header,
+.luxury-tax-card .card-header {
+    flex: 1.5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-icon {
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.railroad-card .card-body {
+    background-image: url('imgs/train.svg');
+}
+
+.chance-card .card-body {
+    background-image: url('imgs/question-mark-orange.svg');
+}
+
+.community-chest-card .card-body {
+    background-image: url('imgs/chest.svg');
+}
+
+.income-tax-card .card-body {
+    background-image: url('imgs/diamond.svg');
+    background-size: 15%;
+}
+
+.luxury-tax-card .card-body {
+    background-image: url('imgs/ring.svg');
+}
+
+.utility-water {
+    background-image: url('imgs/water-faucet.svg');
+}
+
+.utility-electricity {
+    background-image: url('imgs/light-bulb.svg');
+    background-size: 80%;
+}
+
+.start-card {
+    background-image: url('imgs/start.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.jail-card {
+    background-image: url('imgs/in-jail.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.parking-card {
+    background-image: url('imgs/free-parking.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.police-card {
+    background-image: url('imgs/go-to-jail.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.center-card {
+    height: calc(var(--card-height) * 0.75);
+    width: calc(var(--card-height) * 1.1);
+    position: absolute;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#community-chest {
+    left: var(--card-height);
+    top: var(--card-height);
+    transform: rotate(135deg);
+    background-image: url('imgs/community-chest.webp');
+}
+
+#chance {
+    right: var(--card-height);
+    bottom: var(--card-height);
+    transform: rotate(315deg);
+    background-image: url('imgs/chance.webp');
+}
+
+#monopoly-logo {
+    height: calc(var(--card-height) * 1.5);
+    width: calc(var(--card-height) * 5);
+    position: absolute;
+    top: calc(50% - var(--card-height));
+    left: calc(50% - var(--card-height) * 5 / 2);
+    transform: rotate(315deg);
+    background-image: url('imgs/monopoly-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
