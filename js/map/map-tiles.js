@@ -1,5 +1,5 @@
 
-let mapTiles = [
+export default [
 
     // --- BOTTOM SIDE ---
 
@@ -231,4 +231,4 @@ let mapTiles = [
         price: 400,
         color: '#0062b0'
     }
-];
+]

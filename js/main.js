@@ -1,3 +1,5 @@
+import mapTiles from "./map/map-tiles.js";
+
 console.log('main.js loaded...');
 
 let mapDiv = document.querySelector('#map');
