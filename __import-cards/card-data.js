@@ -15,4 +15,9 @@ let data =
         message: "You rescue a puppy-and you feel rescued, too! \n GET OUT OF JAIL FREE \n Keep this card until needed, traded or sold.",
         money: 0
     },
+    {
+        playerKeepsCard: true,
+        message: "Dă test",
+        money: 0
+    },
 ]
