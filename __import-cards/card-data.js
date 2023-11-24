@@ -7,7 +7,7 @@ let data =
     },
     {
         playerKeepsCard: false,
-        message: "IT'S YOUR LUCKY DAY: ROLL THE DICE AGAI!",
+        message: "IT'S YOUR LUCKY DAY: ROLL THE DICE AGAIN!",
         money: 0
     },
     {
