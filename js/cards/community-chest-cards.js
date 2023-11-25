@@ -4,7 +4,7 @@ export default [
         money: 200,
         from: "bank",
         keepCard: false,
-        move: "start"
+        move: "Go"
     },
     {
         message: "Bank error in your favor. Collect $200",
