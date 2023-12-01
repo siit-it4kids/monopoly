@@ -20,10 +20,21 @@ export function getChanceCard(){
     shuffleCardsDeck(chanceCards);
     console.log(chanceCards);
     return chanceCards[0];
+
+    chanceCards.push(chanceCards[0]);
+    chanceCards.shift();
+
+    console.log(chanceCards);
 }
 
 export function getCommunityChestCard(){
     shuffleCardsDeck(communityChestCards);
     console.log(communityChestCards);
     return communityChestCards[0];
+
+    
+    communityChestCards.push(communityChestCards[0]);
+    communityChestCards.shift();
+
+    console.log(communityChestCards);
 }
