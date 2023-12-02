@@ -1,6 +1,12 @@
 import chanceCards from "./chance-cards.js";
 import communityChestCards from "./community-chest-cards.js";
 
+shuffleCardsDeck(communityChestCards);
+console.log(communityChestCards);
+
+shuffleCardsDeck(chanceCards);
+console.log(chanceCards);
+
 
 function shuffleCardsDeck(cardsDeck){
     const swaps = 100;
@@ -16,26 +22,15 @@ function shuffleCardsDeck(cardsDeck){
     return cardsDeck;
 }
 
-export function getChanceCard(){
-    shuffleCardsDeck(chanceCards);
-    console.log(chanceCards);
-    
-    chanceCards.push(chanceCards[0]);
-    chanceCards.shift();
-    
-    console.log(chanceCards);
 
-    return chanceCards[chanceCards.length - 1];
+export function getChanceCard(){
+    chanceCards.push(chanceCards[0]);
+    return chanceCards.shift();
 }
+
 
 export function getCommunityChestCard(){
-    shuffleCardsDeck(communityChestCards);
-    console.log(communityChestCards);
-    
     communityChestCards.push(communityChestCards[0]);
-    communityChestCards.shift();
-    
-    console.log(communityChestCards);
-    
-    return communityChestCards[communityChestCards.length - 1];
+    return communityChestCards.shift(); 
 }
+
