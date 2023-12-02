@@ -7,10 +7,10 @@ console.log('main.js loaded...');
 let mapDiv = document.querySelector('#map');
 drawMap(mapDiv);
 
-// 
-let chanceCard = getChanceCard();
-console.log(chanceCard);
+console.log(getChanceCard());
+console.log(getChanceCard());
+console.log(getChanceCard());
 
-// 
-let communityChestCard = getCommunityChestCard();
-console.log(communityChestCard);
+console.log(getCommunityChestCard());
+console.log(getCommunityChestCard());
+console.log(getCommunityChestCard());
