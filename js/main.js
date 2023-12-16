@@ -6,11 +6,3 @@ console.log('main.js loaded...');
 // draw map
 let mapDiv = document.querySelector('#map');
 drawMap(mapDiv);
-
-console.log(getChanceCard());
-console.log(getChanceCard());
-console.log(getChanceCard());
-
-console.log(getCommunityChestCard());
-console.log(getCommunityChestCard());
-console.log(getCommunityChestCard());
