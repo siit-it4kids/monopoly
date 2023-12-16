@@ -16,6 +16,7 @@ function shuffleCardsDeck(cardsDeck){
     return cardsDeck;
 }
 
+// getting a card
 export function getChanceCard(){
     shuffleCardsDeck(chanceCards);
     console.log(chanceCards);
