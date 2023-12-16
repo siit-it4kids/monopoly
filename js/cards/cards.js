@@ -16,13 +16,16 @@ function shuffleCardsDeck(cardsDeck){
     return cardsDeck;
 }
 
-// getting a card
+
+// getting a chance card
 export function getChanceCard(){
     shuffleCardsDeck(chanceCards);
     console.log(chanceCards);
     return chanceCards[0];
 }
 
+
+// getting a community chest card
 export function getCommunityChestCard(){
     shuffleCardsDeck(communityChestCards);
     console.log(communityChestCards);
