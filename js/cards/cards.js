@@ -23,12 +23,14 @@ function shuffleCardsDeck(cardsDeck){
 }
 
 
+// getting a chance card
 export function getChanceCard(){
     chanceCards.push(chanceCards[0]);
     return chanceCards.shift();
 }
 
 
+// getting a community chest card
 export function getCommunityChestCard(){
     communityChestCards.push(communityChestCards[0]);
     return communityChestCards.shift(); 
