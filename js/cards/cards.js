@@ -23,20 +23,14 @@ function shuffleCardsDeck(cardsDeck){
 }
 
 
-<<<<<<< HEAD
-=======
 // getting a chance card
->>>>>>> main
 export function getChanceCard(){
     chanceCards.push(chanceCards[0]);
     return chanceCards.shift();
 }
 
 
-<<<<<<< HEAD
-=======
 // getting a community chest card
->>>>>>> main
 export function getCommunityChestCard(){
     communityChestCards.push(communityChestCards[0]);
     return communityChestCards.shift(); 
