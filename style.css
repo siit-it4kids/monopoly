@@ -181,3 +181,47 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.popup-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e9e994;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    border: double 10px black;
+    background-color: #FBFDFC;
+    height: 15rem;
+    width: 25rem;
+}
+
+.card-title {
+    padding-top: 10px;
+    font-size: 22.5px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.card-body{
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+}
+
+.card-image{
+    background-image: url('imgs/chance-card-img.svg');
+    background-size: contain;
+    flex: 1;
+    aspect-ratio: 1;
+}
+
+.card-message {
+    text-align: center;
+    font-size: large;
+    flex: 3;
+}
