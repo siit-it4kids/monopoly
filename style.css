@@ -193,6 +193,12 @@ body {
     align-items: center;
 }
 
+.popup-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .card-back {
     border: double 10px black;
     background-color: #FBFDFC;
@@ -224,4 +230,23 @@ body {
     text-align: center;
     font-size: large;
     flex: 3;
+}
+
+.close-btn{
+    border: 2px solid black;
+    height: 2.5rem;
+    width: 5.5rem;
+    font-family: 'Josefin Sans';
+    font-size: large;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -10px;
+}
+.close-btn:hover{
+    background-color: #FBFDFC;
+    color: #1e1e1e;
 }
