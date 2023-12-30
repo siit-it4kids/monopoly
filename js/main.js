@@ -8,7 +8,6 @@ let mapDiv = document.querySelector('#map');
 drawMap(mapDiv);
 
 let popupBackground = document.querySelector('.popup-container');
-let cardBackground = document.querySelector('.card-back');
 let cardTitle = document.querySelector('.card-title');
 let cardMessage = document.querySelector('.card-message');
 let closeBtn = document.querySelector('.close-btn');
@@ -30,13 +29,9 @@ function showCommunityChestCard()
     cardMessage.innerText = getCommunityChestCard().message;
 }
 
-showCommunityChestCard();
-
 function showChanceCard()
 {
     popupBackground.style.display = "flex";
     cardTitle.innerText = 'Chance Card';
     cardMessage.innerText = getChanceCard().message;
 }
-
-showChanceCard();
