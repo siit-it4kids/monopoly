@@ -18,20 +18,26 @@ closeBtn.addEventListener('click', closeCard);
 chanceCardDeck.addEventListener('click', showChanceCard);
 communityChestCardDeck.addEventListener('click', showCommunityChestCard);
 
+
 function closeCard(){
     popupBackground.style.display = "none";
 }
+
 
 function showCommunityChestCard()
 {   
     popupBackground.style.display = "flex";
     cardTitle.innerText = 'Community Chest Card';
-    cardMessage.innerText = getCommunityChestCard().message;
+
+    const card = getCommunityChestCard();
+    cardMessage.innerText = card.message;
 }
 
 function showChanceCard()
 {
     popupBackground.style.display = "flex";
     cardTitle.innerText = 'Chance Card';
-    cardMessage.innerText = getChanceCard().message;
+
+    const card = getChanceCard();
+    cardMessage.innerText = card.message;
 }
