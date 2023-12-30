@@ -191,6 +191,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 .popup-content{
