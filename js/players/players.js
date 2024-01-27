@@ -1,22 +1,28 @@
-export default [
-    playerFactory(`Tarzan`, `car`),
-    playerFactory(`Deluță`, `wheelbarrow`),
-    playerFactory(`Andrei Versace`, `shoe`),
-    playerFactory(`Dorian Popa`, `dog`)
-];
+class MonopolyPlayer {
+    constructor(name, avatar) {
+        this.name = name;
+        this.avatar = avatar;
+        this.cash = 2000;
+        this.ownedProperties = [];
+        this.ownedCards = [];
+        this.inJail = false;
+        this.turnsInJail = 0;
+        this.position = 0;
+    }
 
-function playerFactory(name, avatar) {
-    return {
-        name,
-        avatar,
-        cash: 2000,
-        ownedProperties: [],
-        ownedCards: [],
-        inJail: false,
-        turnsInJail: 0,
-        position: 0,
-        move(squaresToMove){
-            this.position += squaresToMove;
-        }
+    move(squaresToMove) {
+        // this.position should not pass 39!
+        this.position += squaresToMove;
+    }
+
+    buyProperty(){
+        
     }
 }
+
+export default [
+    new MonopolyPlayer(`Tarzan`, `car`),
+    new MonopolyPlayer(`Deluță`, `wheelbarrow`),
+    new MonopolyPlayer(`Andrei Versace`, `shoe`),
+    new MonopolyPlayer(`Dorian Popa`, `dog`)
+];
