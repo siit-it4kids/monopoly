@@ -2,10 +2,8 @@ import chanceCards from "./chance-cards.js";
 import communityChestCards from "./community-chest-cards.js";
 
 shuffleCardsDeck(communityChestCards);
-console.log(communityChestCards);
 
 shuffleCardsDeck(chanceCards);
-console.log(chanceCards);
 
 
 function shuffleCardsDeck(cardsDeck){

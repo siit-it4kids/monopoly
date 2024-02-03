@@ -1,3 +1,5 @@
+import mapTiles from "../map/map-tiles.js";
+
 class MonopolyPlayer {
     constructor(name, avatar) {
         this.name = name;
@@ -10,10 +12,15 @@ class MonopolyPlayer {
         this.position = 0;
     }
 
+
     move(squaresToMove) {
-        // this.position should not pass 39!
-        this.position += squaresToMove;
+        const newPosition = this.position + squaresToMove;
+        this.position = newPosition % mapTiles.length;
+
+        let newLap = newPosition >= mapTiles.length;
+        return newLap;
     }
+
 
     buyProperty(){
         
@@ -21,8 +28,8 @@ class MonopolyPlayer {
 }
 
 export default [
-    new MonopolyPlayer(`Tarzan`, `car`),
-    new MonopolyPlayer(`Deluță`, `wheelbarrow`),
-    new MonopolyPlayer(`Andrei Versace`, `shoe`),
-    new MonopolyPlayer(`Dorian Popa`, `dog`)
+    new MonopolyPlayer(`Tarzan`, `🚂`),
+    new MonopolyPlayer(`Deluță`, `🛴`),
+    new MonopolyPlayer(`Andrei Versace`, `👟`),
+    new MonopolyPlayer(`Dorian Popa`, `🐩`)
 ];
